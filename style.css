@@ -23,3 +23,42 @@ a{
     text-decoration: none;
     color: var(--lead);
 }
+.flex{
+    display: flex;
+    align-items: center;
+}
+li{
+    list-style: none;
+}
+.between{
+    justify-content: space-between;
+}
+.gap-3{
+    gap: 3rem;
+}
+
+
+/* Header styling */
+.navbar{
+    min-height: 14vh;
+}
+.wrapper{
+    max-width: 1400px;
+    /* background-color: gold; */
+    margin:auto;
+    padding-inline: 1.5rem;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--gold-finger);
+}
+
+.btn{
+    display: inline-block;
+    padding: .9rem 2rem;
+    background-color: var(--gold-finger);
+    border-radius: 1.1rem;
+    font-size: 1.1rem;
+    color:var(--pure-white)
+}
