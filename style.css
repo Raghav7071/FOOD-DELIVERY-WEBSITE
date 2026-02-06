@@ -7,3 +7,19 @@
     box-sizing: border-box;
     font-family: "Outfit", sans-serif;
 }
+/* :root as a main box where you store things that will be used everywhere on your website. */
+:root{
+    --lead: #212121;
+    --gold-finger: #F2BD12;
+    --eye-ball: #FFFDF7;
+    --hint-yellow: #FCF1CC;
+    --pure-white: #FFF;
+}
+body{
+    background: var(--eye-ball);
+}
+a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--lead);
+}
