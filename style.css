@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Outfit", sans-serif;
-    /* border: .1rem solid red */
 }
 
 /* :root as a main box where you store things that will be used everywhere on your website. */
@@ -50,7 +48,6 @@ li {
     gap: 3rem;
 }
 
-
 /* Header styling */
 .navbar {
     min-height: 14vh;
@@ -58,7 +55,6 @@ li {
 
 .wrapper {
     max-width: 1400px;
-    /* background-color: gold; */
     margin: auto;
     padding-inline: 1.5rem;
 }
@@ -69,16 +65,18 @@ img {
     margin: auto;
     display: block;
 }
-.p-top{
-    padding-top:10rem;
-}
-.text-center{
-    text-align: center;
-}
-.mt-4{
-    margin-top: 4rem;
+
+.p-top {
+    padding-top: 10rem;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.mt-4 {
+    margin-top: 4rem;
+}
 
 .logo {
     font-size: 2rem;
@@ -87,7 +85,6 @@ img {
 }
 
 .btn {
-
     display: inline-block;
     padding: .9rem 2rem;
     background-color: var(--gold-finger);
@@ -100,8 +97,6 @@ img {
 
 .btn:hover {
     background-color: var(--lead);
-
-
 }
 
 .logo:hover {
@@ -129,7 +124,8 @@ img {
     line-height: 20px;
 }
 
-.desktop-action .hambuger {
+/* FIXED TYPO */
+.desktop-action .hamburger {
     font-size: 1.5rem;
     display: none;
 }
@@ -139,16 +135,14 @@ img {
 }
 
 .hero-section {
-
     min-height: calc(100vh - 14vh);
 }
 
 .content,
 .image-container,
-.service-card{
+.service-card {
     flex: 1;
     flex-basis: 300px;
-
 }
 
 h1 {
@@ -164,13 +158,15 @@ p {
     font-size: 1.25rem;
     color: gray;
     line-height: 1.8rem;
-    font-weight: 4001;
+    font-weight: 400;
 }
-.para{
+
+.para {
     margin-block: 2rem;
     max-width: 550px;
 }
-.social-icons{
+
+.social-icons {
     background: var(--hint-yellow);
     width: 3rem;
     aspect-ratio: 1;
@@ -181,31 +177,58 @@ p {
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
     transition: .3s ease-in-out;
 }
-.social-icons:hover{
-    background: var(--lead);
-    color:var(--pure-white);
 
+.social-icons:hover {
+    background: var(--lead);
+    color: var(--pure-white);
 }
-h5{
+
+h5 {
     font-size: 1.2rem;
     letter-spacing: .2rem;
-    color:var(--gold-finger);
+    color: var(--gold-finger);
     text-transform: uppercase;
 }
-h2{
+
+h2 {
     font-size: 3.7rem;
     text-transform: capitalize;
-    color:var(--lead)
+    color: var(--lead);
 }
-h3{
-    font-size:2rem;
+
+h3 {
+    font-size: 2rem;
     text-transform: capitalize;
-    color:var(--lead);
+    color: var(--lead);
 }
-.service-card h3{
+
+.service-card h3 {
     margin-top: 1.5rem;
     margin-bottom: 1rem;
 }
+
+/* section 02 */
+
+.order-card {
+    flex: 1;
+    flex-basis: 300px;
+    background: var(--pure-white);
+    padding: 0 1rem 2rem 1rem;
+    border: .1rem solid var(--gold-finger);
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.5) 8px 8px 8px,
+        rgba(0, 0, 0, 0.5) 8px 8px 8px inset;
+}
+
+.order-card img {
+    width: 15rem;
+}
+
+
+
+
+
+
 
 /* MEDIA QUERIES */
 
@@ -216,7 +239,7 @@ h3{
         display: none;
     }
 
-    .desktop-action .hambuger {
+    .desktop-action .hamburger {
         display: block;
     }
 
@@ -235,27 +258,33 @@ h3{
         background-color: var(--pure-white);
         border: .1rem solid var(--gold-finger);
         border-radius: 2rem;
-        box-shadow: rgba(0, 0, 0, 0.5) 8px 8px 8px, rgba(0, 0, 0, 0.5) 8px 8px 8px inset;
+        box-shadow: rgba(0, 0, 0, 0.5) 8px 8px 8px,
+            rgba(0, 0, 0, 0.5) 8px 8px 8px inset;
         transition: all .5s ease-in-out;
-
     }
 
     .mobile-menu-active {
         left: 50%;
         transform: translateX(-50%);
     }
-    h1{
+
+    h1 {
         font-size: 3.6rem;
     }
-    .content{
+
+    .content {
         padding-top: 3rem;
     }
-    .gap-2{
+
+    .gap-2 {
         gap: 1.4em;
     }
-    .gap-4{
+
+    .gap-4 {
         gap: 4rem;
     }
 
-
+    h2 {
+        font-size: 3rem;
+    }
 }
